@@ -3,33 +3,43 @@
   <head>
     <title>Etsy</title>
     <style>
-      /* #reviews {
-        float: left;
-        padding-top: 20%;
-      } */
-      /* #details {
-        float: right;
-      } */
-      .flexrow {
+      #container {
         display: flex;
-        justify-content: flex-start;
+        flex-direction: column;
+        justify-content: center;
+      }
+      #imagesReviewsDetails {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+      }
+      #productDetails {
+        margin-left: 85px;
+      }
+      #imagesReviews {
+        flex-direction: column;
+        padding-right: 100px;
+      }
+      #additionalItems {
+        display: flex;
+        justify-content: center;
       }
     </style>
   </head>
   <body>
-    <div>
-      <div class="flexrow">
-        <div id='reviews'></div>
-        <div>
-
+    <div id="container">
+      <div id="imagesReviewsDetails">
+        <div id="imagesReviews">
+          <!-- <div id="carousel"></div> -->
+          <div id="reviews"></div>
         </div>
-        <div id='details'></div>
+        <div id="details"></div>
       </div>
-      <div id='additionalItems'></div>
+      <div id="additionalItems"></div>
     </div>
-
-    <script src="http://localhost:3002/bundle.js"></script>
-     <script src="http://localhost:3004/bundle.js"></script>
-    <script src="http://localhost:3001/index.js"></script>
+    <script src="http://ec2-18-220-152-98.us-east-2.compute.amazonaws.com/bundle.js"></script>
+    <script src="http://ec2-3-133-117-113.us-east-2.compute.amazonaws.com/bundle.js"></script>
+    <script src="http://ec2-3-14-246-138.us-east-2.compute.amazonaws.com/index.js"></script>
+    <!-- <script src="http://localhost:3003/bundle.js"></script> -->
   </body>
 </html>
